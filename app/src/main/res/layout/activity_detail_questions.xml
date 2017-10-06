@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:fbutton="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/bgColor"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/fbutton_color_wet_asphalt"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin">
+
+        <!--pertanyaan-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:background="@drawable/text_find"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <!--header poin-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <!--live start-->
+                <ImageView
+                    android:id="@+id/help1"
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginRight="7dp"
+                    android:src="@drawable/help" />
+
+                <ImageView
+                    android:id="@+id/help2"
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="7dp"
+                    android:layout_toRightOf="@id/help1"
+                    android:src="@drawable/help" />
+
+                <ImageView
+                    android:id="@+id/help3"
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/help2"
+                    android:src="@drawable/help" />
+                <!--lives end-->
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:id="@+id/cion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:src="@drawable/coins" />
+
+                <TextView
+                    android:id="@+id/oncoi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:text="0"
+                    android:textColor="#ffd505"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <!--soal-->
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="bottom"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:paddingTop="20dp"
+                            android:paddingBottom="20dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginTop="10dp"
+                            android:id="@+id/asking"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center_horizontal"
+                            android:text="Pertanyaan disini"
+                            android:textSize="50dp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:id="@+id/gambare"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="10dp"
+                            android:visibility="gone" />
+
+
+                    </LinearLayout>
+                </TableLayout>
+
+            </ScrollView>
+
+        </LinearLayout>
+
+        <!--kolom jawaban-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="50dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center_vertical">
+
+            <EditText
+                android:id="@+id/onansw"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="2"
+                android:background="@drawable/text_find"
+                android:gravity="center"
+                android:hint="answer"
+                android:textColor="#787878"
+                android:textColorHint="#787878"
+                android:textStyle="bold|italic" />
+
+            <Button
+                android:id="@+id/findop2"
+                style="@style/Base.Widget.AppCompat.Button.Colored"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_weight="0.5"
+                android:visibility="gone"
+                android:text="CEK"
+                android:textColor="#fff" />
+            <info.hoang8f.widget.FButton
+                android:id="@+id/findop"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_weight="0.3"
+                android:text="Cek"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_size_button"
+                fbutton:buttonColor="@color/fbutton_cek_color"
+                fbutton:cornerRadius="10dp"
+                fbutton:shadowColor="@color/fbutton_cek_shadow_color"
+                fbutton:shadowEnabled="true"
+                fbutton:shadowHeight="5dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!--message when correct-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/isCorrect"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:animateLayoutChanges="true"
+            android:src="@drawable/correctly"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/isCorrect2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Benar atau Salah"
+            android:textColor="#59b352"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id" />
+</RelativeLayout>

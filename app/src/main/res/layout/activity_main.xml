@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fbutton="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fbutton_color_wet_asphalt"
+    android:padding="25dp"
+    tools:context=".Home">
+
+    <TextView
+        android:id="@+id/tvFooter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/fbutton_color_clouds"
+        android:textSize="15sp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/c_2017_qodrbee"
+        android:textStyle="bold" />
+
+
+    <LinearLayout
+        android:id="@+id/layout_button"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp">
+
+            <info.hoang8f.widget.FButton
+                android:id="@+id/goNew"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:layout_marginRight="10dp"
+                android:text="@string/mulai"
+                android:layout_gravity="center"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_size_button"
+                fbutton:cornerRadius="15dp"
+                fbutton:buttonColor="@color/fbutton_default_color"
+                fbutton:shadowColor="@color/fbutton_default_shadow_color"
+                fbutton:shadowEnabled="true"
+                fbutton:shadowHeight="5dp" />
+
+            <info.hoang8f.widget.FButton
+                android:id="@+id/goCara"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:text="Cara Main"
+                android:layout_gravity="center"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_size_button"
+                fbutton:cornerRadius="15dp"
+                fbutton:buttonColor="@color/fbutton_color_emerald"
+                fbutton:shadowColor="@color/fbutton_color_nephritis"
+                fbutton:shadowEnabled="true"
+                fbutton:shadowHeight="5dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp">
+
+            <info.hoang8f.widget.FButton
+                android:id="@+id/goStars"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:layout_marginRight="10dp"
+                android:text="5"
+                android:drawableRight="@drawable/ic_star_white_24dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:paddingLeft="60dip"
+                android:paddingRight="60dip"
+                android:textColor="@android:color/white"
+                fbutton:cornerRadius="15dp"
+                fbutton:buttonColor="@color/fbutton_color_carrot"
+                android:textSize="@dimen/text_size_button"
+                fbutton:shadowColor="@color/fbutton_color_pumpkin"
+                fbutton:shadowEnabled="true"
+                fbutton:shadowHeight="5dp" />
+
+            <info.hoang8f.widget.FButton
+                android:id="@+id/goAbout"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:text="@string/about"
+                android:textColor="@android:color/white"
+                fbutton:cornerRadius="15dp"
+                fbutton:buttonColor="@color/fbutton_color_about"
+                android:textSize="@dimen/text_size_button"
+                fbutton:shadowColor="@color/fbutton_color_shadow_about"
+                fbutton:shadowEnabled="true"
+                fbutton:shadowHeight="5dp" />
+        </LinearLayout>
+
+
+        <info.hoang8f.widget.FButton
+            android:id="@+id/goLogout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:textSize="@dimen/text_size_button"
+            android:text="@string/exit"
+            android:textColor="@android:color/white"
+            fbutton:cornerRadius="15dp"
+            fbutton:buttonColor="@color/fbutton_color_alizarin"
+            fbutton:shadowColor="@color/fbutton_color_pomegranate"
+            fbutton:shadowEnabled="true"
+            fbutton:shadowHeight="5dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="10dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="@dimen/text_size_button"
+                android:background="@drawable/text_find"
+                android:src="@drawable/facebook"/>
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="10dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="@dimen/text_size_button"
+                android:src="@drawable/twitter"/>
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="10dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="@dimen/text_size_button"
+                android:background="@drawable/text_find"
+                android:src="@drawable/instagram"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/suppoerted"
+        android:layout_marginBottom="20dp"
+        android:layout_above="@id/layout_button"/>
+</RelativeLayout>

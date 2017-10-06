@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:padding="10dp"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+<RelativeLayout
+    android:id="@+id/layoutInfo"
+    android:background="@drawable/grid_circle"
+    android:layout_width="70dp"
+    android:layout_gravity="center_horizontal"
+    android:padding="15dp"
+    android:layout_height="70dp">
+    <TextView
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="#fff"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView" />
+    <ImageView
+        android:id="@+id/locker"
+        android:visibility="gone"
+        android:src="@drawable/locker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>
+</LinearLayout>

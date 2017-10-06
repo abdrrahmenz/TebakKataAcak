@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Tebak Kata Acak</string>
+    <string name="title_activity_characters">Characters</string>
+    <string name="banner_ad_unit_id">ca-app-pub-6841232133600933/3921232600</string>
+    <string name="interstitial_ads_id">ca-app-pub-6841232133600933/6874699003</string>
+    <string name="masukan_jawaban">masukkan jawaban</string>
+    <string name="jawaban_kurang_tepat">jawaban kurang tepat</string>
+    <string name="salah">salah!</string>
+    <string name="message_done_first">Selesaikan tantangan sebelumnya</string>
+    <string name="message_exit">Apa kamu yakin ingin keluar dari </string>
+    <string name="yes">Ya</string>
+    <string name="no">Tidak</string>
+    <string name="mulai">Mulai</string>
+    <string name="cara_main">Cara Main</string>
+    <string name="about">About</string>
+    <string name="exit">Keluar</string>
+    <string name="warning">Warning</string>
+    <string name="level_1">Level 1</string>
+    <string name="level_2">Level 2</string>
+    <string name="level_3">Level 3</string>
+    <string name="level_4">Level 4</string>
+    <string name="level_5">Level 5</string>
+    <string name="c_2017_qodrbee">©2017 Qodrbee.com</string>
+    <string name="kosa_kata">Tebak Kata Acak</string>
+    <string name="rate_aplikasi">Beri Bintang</string>
+    <string name="tebak_mufrod_detail">Permainan ini berisi quiz tentang kosa kata Bahasa Arab.
+        Setiap level ada 20 soal kosa kata yang harus dijawab.
+        Level baru akan terbuka jika 20 kosa kata telah selesai dijawab.\n\nUntuk kritik &amp; saran, silakan kirim email ke ruderbytes@gmail.com</string>
+</resources>
